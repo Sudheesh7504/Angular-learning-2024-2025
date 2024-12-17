@@ -24,6 +24,8 @@ import { DynamicTableComponent } from './dynamic-table/dynamic-table/dynamic-tab
 import { TableComponent } from './dynamic-table/table/table.component';
 import { TabComponent } from './child-to-parent-communication/tab/tab.component';
 import { DynamicTabComponent } from './child-to-parent-communication/dynamic-tab/dynamic-tab.component';
+import { AgeCalculatorComponent } from './age-calculator-app/age-calculator/age-calculator.component';
+import { AgeDisplayComponent } from './age-calculator-app/age-display/age-display.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { DynamicTabComponent } from './child-to-parent-communication/dynamic-tab
     DynamicTableComponent,
     TableComponent,
     TabComponent,
-    DynamicTabComponent
+    DynamicTabComponent,
+    AgeCalculatorComponent,
+    AgeDisplayComponent
   ],
   imports: [
     BrowserModule,
