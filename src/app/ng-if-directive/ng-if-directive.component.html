@@ -1,0 +1,36 @@
+ng-if: using ng-if we can display display conditionally but here we need to use ngIf's that repetetive process.
+<br>
+<div *ngIf="!data">
+    <h1>loading....</h1>
+</div>
+
+<div *ngIf="data">
+    <h1>{{data}}</h1>
+</div>
+<br>
+
+ng-if-else: that's why here comes ng-if else we can use template reference variable for displaying data or loader
+<br>
+<div *ngIf="!data; else sampleData">
+ <h1>Loading....</h1>
+</div>
+
+<ng-template #sampleData>
+    {{data}}
+</ng-template>
+<br>
+
+ng-if-then-else: using we can display loader in seperater template reference variable and data in seperate variable conditionally.
+<br>
+<div *ngIf="!data; then loader; else sampleData">
+    
+</div>
+
+<ng-template #loader>
+    <h1>Loading....</h1>
+</ng-template>
+
+<ng-template #sampleData>
+    {{data}}
+</ng-template>
+

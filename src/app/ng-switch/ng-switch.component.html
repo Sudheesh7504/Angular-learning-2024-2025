@@ -1,0 +1,29 @@
+ngSwitch: this is one of the structural directive method we can show or hide dom elements using this.
+  while using ngSwitch we need to remember 3 things 1.[ngSwitch]="expression"
+                                                    2. *ngSwitchCase ="'expr options'"
+                                                    3. *ngSwitchDefault we can give any default options Here
+
+<br>                                                    
+<input type="number" [(ngModel)]="value1"/>
+<br>
+<br>
+<input type="number" [(ngModel)]="value2"/>
+<br>
+<br>
+<div>
+<label for="operator">Operator:</label>
+<select id="operator" (change)="optionSelector($event)">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+</div>
+<br>
+<div [ngSwitch]="option">
+<div *ngSwitchCase="'+'">{{value1+value2}}</div>
+<div *ngSwitchCase="'-'">{{value1-value2}}</div>
+<div *ngSwitchCase="'*'">{{value1*value2}}</div>
+<div *ngSwitchCase="'/'">{{value1/value2}}</div>
+<div *ngSwitchDefault>pls enter some values and choose any one option</div>
+</div>

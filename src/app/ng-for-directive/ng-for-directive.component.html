@@ -1,0 +1,36 @@
+ngFor-directive: it is also one of the structural directive it will use for modify or removing dom elements and looping arrays or array
+of objects
+<br>
+there are some variables index --displays index number
+                         first -- if the item in array is first element returns true
+                         last -- if the item in array is last element returns true
+                         even -- if the item in array is even element returns true
+                         odd -- if the item in array is odd element returns true
+
+<br>
+<div *ngIf="showLoader">
+    <h1>Loading..........</h1>
+</div>
+
+<div *ngIf="!showLoader">
+    <table border=1.0>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Director</th>
+                <th>Release Year</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let m of movies">
+                <td>{{m.title}}</td>
+                <td>{{m.director}}</td>
+                <td>{{m.releaseYear}}</td>
+                <td>{{m.genre}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+                       
+                         

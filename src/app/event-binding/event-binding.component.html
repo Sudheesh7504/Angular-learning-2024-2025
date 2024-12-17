@@ -1,0 +1,18 @@
+Event-binding: This is one of the one-way binding technique but this will change modal when ui changes (view to modal).
+<br>
+counter application:-
+<br>
+<span>{{counter}}</span>
+<br>
+<button (click)="onIncrement()">Increment</button>
+<button (click)="onDecrement()">Decrement</button>
+
+<br>
+here we can get city by default in span tag but if we change any text in input it will effect in modal(view to modal)
+<br>
+this is color game whatever we type in input that color will apply to text
+<br>
+<input type="text" (input)="onInputChange($event)" [style.color]="color"/>
+<br>
+<span [style.background]="color">{{color}}</span>
+

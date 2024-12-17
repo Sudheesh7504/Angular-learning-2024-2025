@@ -1,0 +1,12 @@
+<table border=1.0>
+    <thead>
+        <tr>
+            <th *ngFor="let th of tableHeaders">{{th}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let td of tableData">
+            <td *ngFor="let th of tableHeaders">{{td[th]}}</td>
+        </tr>
+    </tbody>
+</table>

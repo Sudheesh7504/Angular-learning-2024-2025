@@ -1,0 +1,12 @@
+two-way-binding: This is the two-way binding changes will apply from modal to view (or) view to modal.
+<br>
+Here also we can build color game but here we dont required any event handling ngModel will take care of that
+<input type="text" [(ngModel)]="color" [style.color]="color"/>
+<span [style.color]="color">{{color}}</span>
+<br>
+now we can build some calculator application using two-way-binding
+<br>
+<input type="text" [(ngModel)]="value1"/>
+<input type="text" [(ngModel)]="value2"/>
+<span>{{value3}}</span>
+<button (click)="add()">Add</button>

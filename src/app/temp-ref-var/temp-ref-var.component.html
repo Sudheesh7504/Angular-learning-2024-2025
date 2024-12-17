@@ -1,0 +1,7 @@
+template-reference-variable: this will use to access the attributes from the whole template or any subelements of the element by denoting with #.
+<br>
+<input type="text" placeholder="eneter your email" value="abc@gmail.com" #email/>
+<br>
+<span>{{email.value}}</span>
+<br>
+<button (click)="updatEmail(email)">update</button>
