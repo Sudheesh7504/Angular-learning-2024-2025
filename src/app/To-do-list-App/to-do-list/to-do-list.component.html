@@ -1,4 +1,6 @@
 <br>
+<input type="text" #newTask>
+<button (click)="addnewTask(newTask.value)">add new task</button>
 <br>
 <div *ngIf="tasks.length > 0">
     TO Do List

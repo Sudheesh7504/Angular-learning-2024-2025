@@ -13,4 +13,9 @@ export class ToDoListComponent {
     this.tasks.splice(i, 1);
     this.completedTasksEmitter.emit(task);
   }
+
+  addnewTask(newtask: string) {
+    this.tasks.push({ id: Date.now(), title: newtask, status: 'pending' });
+
+  }
 }
