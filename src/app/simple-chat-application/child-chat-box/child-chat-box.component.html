@@ -1,0 +1,6 @@
+child component
+<br>
+<input type="text" #cmsg>
+<button (click)="sendMsgToParent(cmsg.value)">send message</button>
+<br>
+<span *ngIf="replyFromParent">reply from parent: {{replyFromParent}}</span>

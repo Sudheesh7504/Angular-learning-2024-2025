@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
@@ -26,6 +25,10 @@ import { TabComponent } from './child-to-parent-communication/tab/tab.component'
 import { DynamicTabComponent } from './child-to-parent-communication/dynamic-tab/dynamic-tab.component';
 import { AgeCalculatorComponent } from './age-calculator-app/age-calculator/age-calculator.component';
 import { AgeDisplayComponent } from './age-calculator-app/age-display/age-display.component';
+import { ParentChatBoxComponent } from './simple-chat-application/parent-chat-box/parent-chat-box.component';
+import { ChildChatBoxComponent } from './simple-chat-application/child-chat-box/child-chat-box.component';
+import { TaskListComponent } from './To-do-list-App/task-list/task-list.component';
+import { ToDoListComponent } from './To-do-list-App/to-do-list/to-do-list.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,11 @@ import { AgeDisplayComponent } from './age-calculator-app/age-display/age-displa
     TabComponent,
     DynamicTabComponent,
     AgeCalculatorComponent,
-    AgeDisplayComponent
+    AgeDisplayComponent,
+    ParentChatBoxComponent,
+    ChildChatBoxComponent,
+    TaskListComponent,
+    ToDoListComponent
   ],
   imports: [
     BrowserModule,

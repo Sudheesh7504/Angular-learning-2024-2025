@@ -1,0 +1,10 @@
+<br>
+<br>
+<div *ngIf="tasks.length > 0">
+    TO Do List
+    <br>
+    <div *ngFor="let task of tasks;let i = index;">
+        <span>{{task.title}}</span>
+        <button (click)="markCompletedTasks(task, i)">mark as completed</button>
+    </div>
+</div>

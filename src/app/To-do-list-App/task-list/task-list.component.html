@@ -1,0 +1,11 @@
+<app-to-do-list [tasks]="tasksList" (completedTasksEmitter)="getCompletedTasks($event)"></app-to-do-list>
+<br>
+
+<div *ngIf="completedTasks.length > 0">
+    completed Tasks list
+    <br>
+    <div *ngFor="let ct of completedTasks;let i = index">
+        <span>{{ct.title}}</span>
+        <button (click)="addtoTaskList(i)">Add to ToDo list</button>
+    </div>
+</div>

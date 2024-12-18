@@ -1,0 +1,12 @@
+<app-child-chat-box (sendMsgtoParentEmitter)="receiveMessagefromChild($event)"
+    [replyFromParent]="sendReplyToChild"></app-child-chat-box>
+<br>
+<br>
+parent component
+
+<br>
+<span *ngIf="receivedMsgFromChild">Message from child:{{receivedMsgFromChild}}</span>
+<br>
+
+<input type="text" #replytochild>
+<button (click)="replyToChild(replytochild.value)">Reply</button>
