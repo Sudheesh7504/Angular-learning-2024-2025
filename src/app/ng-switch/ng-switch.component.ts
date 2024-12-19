@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-ng-switch',
@@ -12,11 +13,11 @@ export class NgSwitchComponent {
   value2: number = 0;
   result: number = 0;
 
-  optionSelector(e: any){
-     this.option = e.target.value;
+  optionSelector(e: any) {
+    this.option = e.target.value;
   }
 
- 
+
 
   // optionSelector(e: any){
   //    this.option = e.target.value;

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { ChildChatBoxComponent } from "../child-chat-box/child-chat-box.component";
 
 @Component({
   selector: 'app-parent-chat-box',

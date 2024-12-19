@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { DynamicTableComponent } from "../dynamic-table/dynamic-table.component";
 
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrl: './table.component.scss'
+  styleUrl: './table.component.scss',
 })
 export class TableComponent {
   movies = [

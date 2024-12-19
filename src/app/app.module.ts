@@ -29,6 +29,14 @@ import { ParentChatBoxComponent } from './simple-chat-application/parent-chat-bo
 import { ChildChatBoxComponent } from './simple-chat-application/child-chat-box/child-chat-box.component';
 import { TaskListComponent } from './To-do-list-App/task-list/task-list.component';
 import { ToDoListComponent } from './To-do-list-App/to-do-list/to-do-list.component';
+import { TrvChildComponent } from './trv-child-to-parent/trv-child/trv-child.component';
+import { TrvParentComponent } from './trv-child-to-parent/trv-parent/trv-parent.component';
+import { ChildViewChildComponent } from './view-child-child-to-parent/child-view-child/child-view-child.component';
+import { ParentViewChildComponent } from './view-child-child-to-parent/parent-view-child/parent-view-child.component';
+import { ParentCounterComponent } from './view-child-counter-app/parent-counter/parent-counter.component';
+import { ChildCounterComponent } from './view-child-counter-app/child-counter/child-counter.component';
+import { ParentTabTrvComponent } from './dynamic-tab-structure-trv/parent-tab-trv/parent-tab-trv.component';
+import { ChildTabTrvComponent } from './dynamic-tab-structure-trv/child-tab-trv/child-tab-trv.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +66,15 @@ import { ToDoListComponent } from './To-do-list-App/to-do-list/to-do-list.compon
     ParentChatBoxComponent,
     ChildChatBoxComponent,
     TaskListComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    TrvChildComponent,
+    TrvParentComponent,
+    ChildViewChildComponent,
+    ParentViewChildComponent,
+    ParentCounterComponent,
+    ChildCounterComponent,
+    ParentTabTrvComponent,
+    ChildTabTrvComponent
   ],
   imports: [
     BrowserModule,

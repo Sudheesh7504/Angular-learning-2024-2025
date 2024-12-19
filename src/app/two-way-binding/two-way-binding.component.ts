@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-two-way-binding',
@@ -6,12 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './two-way-binding.component.scss'
 })
 export class TwoWayBindingComponent {
-  color:string = "blue";
+  color: string = "blue";
   value1: number = 0;
   value2: number = 0;
   value3: number = 0;
 
-  add(){
-   this.value3 = this.value1+this.value2;
+  add() {
+    this.value3 = this.value1 + this.value2;
   }
 }

@@ -1,0 +1,13 @@
+.active {
+    background-color: green;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-items {
+    display: flex;
+    gap: 5px;
+}

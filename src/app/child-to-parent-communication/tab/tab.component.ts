@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { DynamicTabComponent } from "../dynamic-tab/dynamic-tab.component";
 
 @Component({
   selector: 'app-tab',
   templateUrl: './tab.component.html',
-  styleUrl: './tab.component.scss'
+  styleUrl: './tab.component.scss',
 })
 export class TabComponent {
 

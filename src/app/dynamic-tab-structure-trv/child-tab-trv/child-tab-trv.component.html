@@ -1,0 +1,7 @@
+<nav>
+    <ul class="nav-items">
+        <li *ngFor="let tab of tabs;let i = index;">
+            <a [class.active]="activeIndex === i" (click)="getActivetabIndex(i)">{{tab}}</a>
+        </li>
+    </ul>
+</nav>

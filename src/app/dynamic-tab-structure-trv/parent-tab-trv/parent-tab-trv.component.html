@@ -1,0 +1,21 @@
+<app-child-tab-trv [tabs]="tabsArray" #child></app-child-tab-trv>
+<br>
+<div *ngIf="child.activeIndex === 0">
+    this is tab1 data
+</div>
+
+<div *ngIf="child.activeIndex === 1">
+    this is tab2 data
+</div>
+
+<div *ngIf="child.activeIndex === 2">
+    this is tab3 data
+</div>
+
+<div *ngIf="child.activeIndex === 3">
+    this is tab4 data
+</div>
+
+<div *ngIf="child.activeIndex === 4">
+    this is tab5 data
+</div>
