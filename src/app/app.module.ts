@@ -37,6 +37,7 @@ import { ParentCounterComponent } from './view-child-counter-app/parent-counter/
 import { ChildCounterComponent } from './view-child-counter-app/child-counter/child-counter.component';
 import { ParentTabTrvComponent } from './dynamic-tab-structure-trv/parent-tab-trv/parent-tab-trv.component';
 import { ChildTabTrvComponent } from './dynamic-tab-structure-trv/child-tab-trv/child-tab-trv.component';
+import { ViewChildRefComponent } from './view-child-ref/view-child-ref.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { ChildTabTrvComponent } from './dynamic-tab-structure-trv/child-tab-trv/
     ParentCounterComponent,
     ChildCounterComponent,
     ParentTabTrvComponent,
-    ChildTabTrvComponent
+    ChildTabTrvComponent,
+    ViewChildRefComponent
   ],
   imports: [
     BrowserModule,

@@ -22,6 +22,7 @@ import { TrvParentComponent } from "./trv-child-to-parent/trv-parent/trv-parent.
 import { ParentViewChildComponent } from "./view-child-child-to-parent/parent-view-child/parent-view-child.component";
 import { ParentCounterComponent } from "./view-child-counter-app/parent-counter/parent-counter.component";
 import { ParentTabTrvComponent } from "./dynamic-tab-structure-trv/parent-tab-trv/parent-tab-trv.component";
+import { ViewChildRefComponent } from "./view-child-ref/view-child-ref.component";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
