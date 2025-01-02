@@ -45,8 +45,7 @@ export class TaskListComponent {
     }
   }
 
-  addtoTaskList(i: number) {
-    const task = this.completedTasks[i];
+  addtoTaskList(task: any, i: number) {
     if (this.tasksList.find((t) => t.id === task.id)) {
       window.alert("the selected task is already in to do list");
     } else {

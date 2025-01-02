@@ -6,6 +6,6 @@
     <br>
     <div *ngFor="let ct of completedTasks;let i = index">
         <span>{{ct.title}}</span>
-        <button (click)="addtoTaskList(i)">Add to ToDo list</button>
+        <button (click)="addtoTaskList(ct,i)">Add to ToDo list</button>
     </div>
 </div>
