@@ -39,6 +39,11 @@ import { ParentTabTrvComponent } from './dynamic-tab-structure-trv/parent-tab-tr
 import { ChildTabTrvComponent } from './dynamic-tab-structure-trv/child-tab-trv/child-tab-trv.component';
 import { ViewChildRefComponent } from './view-child-ref/view-child-ref.component';
 import { ViewChildVsViewChildrenComponent } from './view-child-vs-view-children/view-child-vs-view-children.component';
+import { HeaderComponent } from './routing/header/header.component';
+import { AboutComponent } from './routing/about/about.component';
+import { ContactComponent } from './routing/contact/contact.component';
+import { NotFoundComponent } from './routing/not-found/not-found.component';
+import { HomeComponent } from './routing/home/home.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +83,12 @@ import { ViewChildVsViewChildrenComponent } from './view-child-vs-view-children/
     ParentTabTrvComponent,
     ChildTabTrvComponent,
     ViewChildRefComponent,
-    ViewChildVsViewChildrenComponent
+    ViewChildVsViewChildrenComponent,
+    HeaderComponent,
+    AboutComponent,
+    ContactComponent,
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
