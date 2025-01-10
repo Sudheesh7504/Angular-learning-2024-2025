@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestService } from '../../test.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  constructor(private ts: TestService) { }
+
+  mobiles = this.ts.mobiles;
+  addMobiles() {
+    this.mobiles.push("vivo");
+  }
 }
