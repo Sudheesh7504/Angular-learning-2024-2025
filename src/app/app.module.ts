@@ -46,6 +46,9 @@ import { NotFoundComponent } from './routing/not-found/not-found.component';
 import { HomeComponent } from './routing/home/home.component';
 import { TestService } from './test.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LandingComponent } from './route-parameters/landing/landing.component';
+import { UsersComponent } from './route-parameters/users/users.component';
+import { UserDetailsComponent } from './route-parameters/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +93,10 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ContactComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    LandingComponent,
+    UsersComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,

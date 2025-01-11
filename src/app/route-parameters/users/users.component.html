@@ -1,0 +1,6 @@
+<div *ngFor="let u of users">
+    <span>{{u.name}}</span>
+    <span>
+        <a [routerLink]="['/user',u.id]">See Profile</a>
+    </span>
+</div>
