@@ -49,6 +49,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { LandingComponent } from './route-parameters/landing/landing.component';
 import { UsersComponent } from './route-parameters/users/users.component';
 import { UserDetailsComponent } from './route-parameters/user-details/user-details.component';
+import { VehicleParkingHomeComponent } from './parking-management-app/vehicle-parking-home/vehicle-parking-home.component';
+import { VehicleParkingDashboardComponent } from './parking-management-app/vehicle-parking-dashboard/vehicle-parking-dashboard.component';
+import { VehicleParkingDetailsComponent } from './parking-management-app/vehicle-parking-details/vehicle-parking-details.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +99,10 @@ import { UserDetailsComponent } from './route-parameters/user-details/user-detai
     HomeComponent,
     LandingComponent,
     UsersComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    VehicleParkingHomeComponent,
+    VehicleParkingDashboardComponent,
+    VehicleParkingDetailsComponent
   ],
   imports: [
     BrowserModule,

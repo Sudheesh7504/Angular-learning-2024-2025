@@ -7,6 +7,9 @@ import { HomeComponent } from './routing/home/home.component';
 import { LandingComponent } from './route-parameters/landing/landing.component';
 import { UsersComponent } from './route-parameters/users/users.component';
 import { UserDetailsComponent } from './route-parameters/user-details/user-details.component';
+import { VehicleParkingHomeComponent } from './parking-management-app/vehicle-parking-home/vehicle-parking-home.component';
+import { VehicleParkingDashboardComponent } from './parking-management-app/vehicle-parking-dashboard/vehicle-parking-dashboard.component';
+import { VehicleParkingDetailsComponent } from './parking-management-app/vehicle-parking-details/vehicle-parking-details.component';
 
 // const routes: Routes = [
 //   { path: '', component: HomeComponent },
@@ -14,12 +17,17 @@ import { UserDetailsComponent } from './route-parameters/user-details/user-detai
 //   { path: 'contact', component: ContactComponent },
 //   { path: '**', component: NotFoundComponent }
 // ];
+// const routes: Routes = [
+//   { path: '', component: LandingComponent },
+//   { path: 'users', component: UsersComponent },
+//   { path: 'user/:id', component: UserDetailsComponent },
+//   { path: '**', component: NotFoundComponent }
+// ];
 const routes: Routes = [
-  { path: '', component: LandingComponent },
-  { path: 'users', component: UsersComponent },
-  { path: 'user/:id', component: UserDetailsComponent },
-  { path: '**', component: NotFoundComponent }
-];
+  { path: '', component: VehicleParkingHomeComponent },
+  { path: 'vehiclesDashboard', component: VehicleParkingDashboardComponent },
+  { path: 'vehicle/:id', component: VehicleParkingDetailsComponent }
+]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

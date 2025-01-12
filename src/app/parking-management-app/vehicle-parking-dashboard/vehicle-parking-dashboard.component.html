@@ -1,0 +1,6 @@
+<p>vehicle-parking-dashboard works!</p>
+<div *ngFor="let v of parkingDetails">
+
+    <p>{{v.registration}}</p>
+    <button [routerLink]="['/vehicle',v.id]">view parking data</button>
+</div>
