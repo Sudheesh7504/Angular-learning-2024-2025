@@ -10,6 +10,8 @@ import { UserDetailsComponent } from './route-parameters/user-details/user-detai
 import { VehicleParkingHomeComponent } from './parking-management-app/vehicle-parking-home/vehicle-parking-home.component';
 import { VehicleParkingDashboardComponent } from './parking-management-app/vehicle-parking-dashboard/vehicle-parking-dashboard.component';
 import { VehicleParkingDetailsComponent } from './parking-management-app/vehicle-parking-details/vehicle-parking-details.component';
+import { ProductsHomeComponent } from './query-params/products-home/products-home.component';
+import { ProductsComponent } from './query-params/products/products.component';
 
 // const routes: Routes = [
 //   { path: '', component: HomeComponent },
@@ -23,11 +25,17 @@ import { VehicleParkingDetailsComponent } from './parking-management-app/vehicle
 //   { path: 'user/:id', component: UserDetailsComponent },
 //   { path: '**', component: NotFoundComponent }
 // ];
+// const routes: Routes = [
+//   { path: '', component: VehicleParkingHomeComponent },
+//   { path: 'vehiclesDashboard', component: VehicleParkingDashboardComponent },
+//   { path: 'vehicle/:id', component: VehicleParkingDetailsComponent }
+// ]
+
 const routes: Routes = [
-  { path: '', component: VehicleParkingHomeComponent },
-  { path: 'vehiclesDashboard', component: VehicleParkingDashboardComponent },
-  { path: 'vehicle/:id', component: VehicleParkingDetailsComponent }
-]
+  { path: '', component: ProductsHomeComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: '**', component: NotFoundComponent }
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

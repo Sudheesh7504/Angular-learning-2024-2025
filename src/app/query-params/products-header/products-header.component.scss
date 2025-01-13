@@ -1,0 +1,17 @@
+.active {
+    background-color: black;
+    color: white;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+}
+
+.item a {
+    text-decoration: none;
+}

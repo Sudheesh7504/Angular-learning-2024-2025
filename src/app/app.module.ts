@@ -52,6 +52,9 @@ import { UserDetailsComponent } from './route-parameters/user-details/user-detai
 import { VehicleParkingHomeComponent } from './parking-management-app/vehicle-parking-home/vehicle-parking-home.component';
 import { VehicleParkingDashboardComponent } from './parking-management-app/vehicle-parking-dashboard/vehicle-parking-dashboard.component';
 import { VehicleParkingDetailsComponent } from './parking-management-app/vehicle-parking-details/vehicle-parking-details.component';
+import { ProductsHomeComponent } from './query-params/products-home/products-home.component';
+import { ProductsComponent } from './query-params/products/products.component';
+import { ProductsHeaderComponent } from './query-params/products-header/products-header.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +105,10 @@ import { VehicleParkingDetailsComponent } from './parking-management-app/vehicle
     UserDetailsComponent,
     VehicleParkingHomeComponent,
     VehicleParkingDashboardComponent,
-    VehicleParkingDetailsComponent
+    VehicleParkingDetailsComponent,
+    ProductsHomeComponent,
+    ProductsComponent,
+    ProductsHeaderComponent
   ],
   imports: [
     BrowserModule,
