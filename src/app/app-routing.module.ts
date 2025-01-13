@@ -33,6 +33,7 @@ import { ProductsComponent } from './query-params/products/products.component';
 
 const routes: Routes = [
   { path: '', component: ProductsHomeComponent },
+  { path: 'home/:id/:test', component: ProductsHomeComponent },
   { path: 'products', component: ProductsComponent },
   { path: '**', component: NotFoundComponent }
 ];
