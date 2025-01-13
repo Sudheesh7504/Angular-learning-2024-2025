@@ -2,3 +2,9 @@
 <div *ngFor="let m of mobiles">
     <p>{{m}}</p>
 </div>
+
+<br>
+<p>This is home component</p>
+<a routerLink="/home/homechild1" routerLinkActive="active" class="nav-item">Home child1</a>
+<a routerLink="/home/homechild2" routerLinkActive="active" class="nav-item">Home child2</a>
+<router-outlet></router-outlet>

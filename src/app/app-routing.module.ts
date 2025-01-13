@@ -12,9 +12,19 @@ import { VehicleParkingDashboardComponent } from './parking-management-app/vehic
 import { VehicleParkingDetailsComponent } from './parking-management-app/vehicle-parking-details/vehicle-parking-details.component';
 import { ProductsHomeComponent } from './query-params/products-home/products-home.component';
 import { ProductsComponent } from './query-params/products/products.component';
+import { Homechild1Component } from './routing/homechild1/homechild1.component';
+import { Homechild2Component } from './routing/homechild2/homechild2.component';
+import { ProductDetailsComponent } from './query-params/product-details/product-details.component';
 
 // const routes: Routes = [
 //   { path: '', component: HomeComponent },
+//   {
+//     path: 'home', component: HomeComponent,
+//     children: [ //child routing : here we can load the different components inside some parent component 
+//       { path: 'homechild1', component: Homechild1Component },
+//       { path: 'homechild2', component: Homechild2Component }
+//     ]
+//   },
 //   { path: 'about', component: AboutComponent },
 //   { path: 'contact', component: ContactComponent },
 //   { path: '**', component: NotFoundComponent }
@@ -34,7 +44,12 @@ import { ProductsComponent } from './query-params/products/products.component';
 const routes: Routes = [
   { path: '', component: ProductsHomeComponent },
   { path: 'home/:id/:test', component: ProductsHomeComponent },
-  { path: 'products', component: ProductsComponent },
+  {
+    path: 'products', component: ProductsComponent,
+    children: [{
+      path: 'details/:id', component: ProductDetailsComponent
+    }]
+  },
   { path: '**', component: NotFoundComponent }
 ];
 @NgModule({

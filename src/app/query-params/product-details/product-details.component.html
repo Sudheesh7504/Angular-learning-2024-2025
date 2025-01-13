@@ -1,0 +1,9 @@
+<div class="product-container">
+    <img [src]="product.image" alt="{{product.image}}" class="product-image" />
+    <div class="product-details">
+        <h3 class="product-name">{{ product.name }}</h3>
+        <p class="product-price">Price: Rs.{{ product.price*85 }}</p>
+        <p class="product-brand">Brand: {{ product.brand }}</p>
+        <p class="product-stock">Stock: {{ product.stock }}</p>
+    </div>
+</div>

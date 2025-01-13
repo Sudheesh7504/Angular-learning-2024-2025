@@ -1,11 +1,13 @@
 <div class="product-container">
     <div class="product-card" *ngFor="let p of products">
-        <img [src]="p.image" alt="{{p.image}}" class="product-image" />
-        <div class="product-details">
-            <h3 class="product-name">{{ p.name }}</h3>
-            <p class="product-price">Price: Rs.{{ p.price*85 }}</p>
+        <!-- <img [src]="p.image" alt="{{p.image}}" class="product-image" />
+        <div class="product-details"> -->
+        <h3 class="product-name">{{ p.name }}</h3>
+        <a [routerLink]="['/products/details',p.id]" routerLinkActive="active">view details</a>
+        <!-- <p class="product-price">Price: Rs.{{ p.price*85 }}</p>
             <p class="product-brand">Brand: {{ p.brand }}</p>
-            <p class="product-stock">Stock: {{ p.stock }}</p>
-        </div>
+            <p class="product-stock">Stock: {{ p.stock }}</p> -->
+        <!-- </div> -->
     </div>
 </div>
+<router-outlet></router-outlet>

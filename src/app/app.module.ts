@@ -44,7 +44,7 @@ import { AboutComponent } from './routing/about/about.component';
 import { ContactComponent } from './routing/contact/contact.component';
 import { NotFoundComponent } from './routing/not-found/not-found.component';
 import { HomeComponent } from './routing/home/home.component';
-import { TestService } from './test.service';
+import { TestService } from './routing/test.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingComponent } from './route-parameters/landing/landing.component';
 import { UsersComponent } from './route-parameters/users/users.component';
@@ -55,6 +55,9 @@ import { VehicleParkingDetailsComponent } from './parking-management-app/vehicle
 import { ProductsHomeComponent } from './query-params/products-home/products-home.component';
 import { ProductsComponent } from './query-params/products/products.component';
 import { ProductsHeaderComponent } from './query-params/products-header/products-header.component';
+import { Homechild1Component } from './routing/homechild1/homechild1.component';
+import { Homechild2Component } from './routing/homechild2/homechild2.component';
+import { ProductDetailsComponent } from './query-params/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -108,7 +111,10 @@ import { ProductsHeaderComponent } from './query-params/products-header/products
     VehicleParkingDetailsComponent,
     ProductsHomeComponent,
     ProductsComponent,
-    ProductsHeaderComponent
+    ProductsHeaderComponent,
+    Homechild1Component,
+    Homechild2Component,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
