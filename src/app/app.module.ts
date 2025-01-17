@@ -58,6 +58,11 @@ import { ProductsHeaderComponent } from './query-params/products-header/products
 import { Homechild1Component } from './routing/homechild1/homechild1.component';
 import { Homechild2Component } from './routing/homechild2/homechild2.component';
 import { ProductDetailsComponent } from './query-params/product-details/product-details.component';
+import { HttpModuleComponentComponent } from './http-module/http-module-component/http-module-component.component';
+import { DetailsComponent } from './route-guards/details/details.component';
+import { RouteGuardHeaderComponent } from './route-guards/route-guard-header/route-guard-header.component';
+import { AuthGuard } from './route-guards/auth.guard';
+import { AuthService } from './route-guards/auth.service';
 
 @NgModule({
   declarations: [
@@ -114,7 +119,10 @@ import { ProductDetailsComponent } from './query-params/product-details/product-
     ProductsHeaderComponent,
     Homechild1Component,
     Homechild2Component,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    HttpModuleComponentComponent,
+    DetailsComponent,
+    RouteGuardHeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -122,7 +130,7 @@ import { ProductDetailsComponent } from './query-params/product-details/product-
     FormsModule,
     HttpClientModule
   ],
-  providers: [TestService],
+  providers: [TestService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

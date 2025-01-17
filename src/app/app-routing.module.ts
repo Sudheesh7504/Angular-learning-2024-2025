@@ -15,7 +15,11 @@ import { ProductsComponent } from './query-params/products/products.component';
 import { Homechild1Component } from './routing/homechild1/homechild1.component';
 import { Homechild2Component } from './routing/homechild2/homechild2.component';
 import { ProductDetailsComponent } from './query-params/product-details/product-details.component';
+import { LoginComponent } from './route-guards/login/login.component';
+import { DetailsComponent } from './route-guards/details/details.component';
+import { AuthGuard } from './route-guards/auth.guard';
 
+//routing with child routes
 // const routes: Routes = [
 //   { path: '', component: HomeComponent },
 //   {
@@ -29,29 +33,39 @@ import { ProductDetailsComponent } from './query-params/product-details/product-
 //   { path: 'contact', component: ContactComponent },
 //   { path: '**', component: NotFoundComponent }
 // ];
+
+//route params
 // const routes: Routes = [
 //   { path: '', component: LandingComponent },
 //   { path: 'users', component: UsersComponent },
 //   { path: 'user/:id', component: UserDetailsComponent },
 //   { path: '**', component: NotFoundComponent }
 // ];
+
 // const routes: Routes = [
 //   { path: '', component: VehicleParkingHomeComponent },
 //   { path: 'vehiclesDashboard', component: VehicleParkingDashboardComponent },
 //   { path: 'vehicle/:id', component: VehicleParkingDetailsComponent }
 // ]
 
+//query params and child routes
+// const routes: Routes = [
+//   { path: '', component: ProductsHomeComponent },
+//   { path: 'home/:id/:test', component: ProductsHomeComponent },
+//   {
+//     path: 'products', component: ProductsComponent,
+//     children: [{
+//       path: 'details/:id', component: ProductDetailsComponent
+//     }]
+//   },
+//   { path: '**', component: NotFoundComponent }
+// ];
+
+//route-guards
 const routes: Routes = [
-  { path: '', component: ProductsHomeComponent },
-  { path: 'home/:id/:test', component: ProductsHomeComponent },
-  {
-    path: 'products', component: ProductsComponent,
-    children: [{
-      path: 'details/:id', component: ProductDetailsComponent
-    }]
-  },
-  { path: '**', component: NotFoundComponent }
-];
+  { path: 'login', component: LoginComponent },
+  { path: 'details', component: DetailsComponent, canActivate: [AuthGuard] }
+]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
