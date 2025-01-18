@@ -63,6 +63,7 @@ import { DetailsComponent } from './route-guards/details/details.component';
 import { RouteGuardHeaderComponent } from './route-guards/route-guard-header/route-guard-header.component';
 import { AuthGuard } from './route-guards/auth.guard';
 import { AuthService } from './route-guards/auth.service';
+import { ObservableComponent } from './observables/observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -123,6 +124,7 @@ import { AuthService } from './route-guards/auth.service';
     HttpModuleComponentComponent,
     DetailsComponent,
     RouteGuardHeaderComponent,
+    ObservableComponent,
   ],
   imports: [
     BrowserModule,
