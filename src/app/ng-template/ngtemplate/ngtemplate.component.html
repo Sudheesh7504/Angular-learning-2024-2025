@@ -1,0 +1,8 @@
+<ng-template #myTemplate>
+    <p>This is a reusable template!</p>
+</ng-template>
+
+<button (click)="show = !show">Toggle Template</button>
+<div *ngIf="show">
+    <ng-container *ngTemplateOutlet="myTemplate"></ng-container>
+</div>

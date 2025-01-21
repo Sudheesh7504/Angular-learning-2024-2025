@@ -67,6 +67,7 @@ import { ObservableComponent } from './observables/observable/observable.compone
 import { CaptureComponent } from './content-projection/capture/capture.component';
 import { ReviewComponent } from './content-projection/review/review.component';
 import { NgcontainerComponent } from './ng-container/ngcontainer/ngcontainer.component';
+import { NgtemplateComponent } from './ng-template/ngtemplate/ngtemplate.component';
 
 @NgModule({
   declarations: [
@@ -131,6 +132,7 @@ import { NgcontainerComponent } from './ng-container/ngcontainer/ngcontainer.com
     CaptureComponent,
     ReviewComponent,
     NgcontainerComponent,
+    NgtemplateComponent,
   ],
   imports: [
     BrowserModule,
