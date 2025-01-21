@@ -66,6 +66,7 @@ import { AuthService } from './route-guards/auth.service';
 import { ObservableComponent } from './observables/observable/observable.component';
 import { CaptureComponent } from './content-projection/capture/capture.component';
 import { ReviewComponent } from './content-projection/review/review.component';
+import { NgcontainerComponent } from './ng-container/ngcontainer/ngcontainer.component';
 
 @NgModule({
   declarations: [
@@ -129,6 +130,7 @@ import { ReviewComponent } from './content-projection/review/review.component';
     ObservableComponent,
     CaptureComponent,
     ReviewComponent,
+    NgcontainerComponent,
   ],
   imports: [
     BrowserModule,

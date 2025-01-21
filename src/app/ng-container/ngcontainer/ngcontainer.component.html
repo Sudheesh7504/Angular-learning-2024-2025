@@ -1,0 +1,8 @@
+<ng-container *ngFor="let n of [10,20,38,25,1,3]">
+    <ng-container *ngIf="n%2 === 0">
+        {{n}}
+    </ng-container>
+</ng-container>
+<br>
+here if you want to use 2 structural directives and want to display only content inside it at that we will use this
+ng-container it will gives only content inside it that ng-content tag will igore the browser.
