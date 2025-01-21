@@ -64,6 +64,8 @@ import { RouteGuardHeaderComponent } from './route-guards/route-guard-header/rou
 import { AuthGuard } from './route-guards/auth.guard';
 import { AuthService } from './route-guards/auth.service';
 import { ObservableComponent } from './observables/observable/observable.component';
+import { CaptureComponent } from './content-projection/capture/capture.component';
+import { ReviewComponent } from './content-projection/review/review.component';
 
 @NgModule({
   declarations: [
@@ -125,6 +127,8 @@ import { ObservableComponent } from './observables/observable/observable.compone
     DetailsComponent,
     RouteGuardHeaderComponent,
     ObservableComponent,
+    CaptureComponent,
+    ReviewComponent,
   ],
   imports: [
     BrowserModule,

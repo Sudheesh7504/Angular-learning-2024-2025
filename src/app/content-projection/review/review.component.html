@@ -1,0 +1,10 @@
+ng-content: content projection this is used for resuable components so that we can pass different data from parent to
+child.
+<br>
+<div>
+    <ng-content select=".emp-list"></ng-content>
+    <ng-content select=".client-list"></ng-content>
+    <ul *ngFor="let i of list">
+        <li>{{i}}</li>
+    </ul>
+</div>
