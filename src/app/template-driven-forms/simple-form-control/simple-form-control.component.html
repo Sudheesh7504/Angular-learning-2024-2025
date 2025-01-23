@@ -1,0 +1,82 @@
+<!-- <h1>Sample form with validations & error handling</h1>
+<form>
+    <div ngModelGroup #grp="ngModelGroup">
+        username:
+        <input minlength="3" type="text" ngModel name="uname" #un="ngModel" required>
+        <ng-container *ngIf="un.touched">
+            <p class="error-msg" *ngIf="un.errors?.['minlength']">username contains minimum 3 characters</p>
+            <p class="error-msg" *ngIf="un.errors?.['required']">username is required</p>
+        </ng-container>
+        <br>
+        <br>
+        password:
+        <input minlength="5" type="password" ngModel name="password" #pwd="ngModel" required>
+        <br>
+        <ng-container *ngIf="pwd.touched">
+            <p class="error-msg" *ngIf="pwd.errors?.['minlength']">password contains minimum 5 characters</p>
+            <p class="error-msg" *ngIf="pwd.errors?.['required']">password is required</p>
+        </ng-container>
+        <button (click)="submitForm(un,pwd,grp)" [disabled]="grp.invalid && grp.untouched">submit</button>
+    </div>
+</form> -->
+
+<!-- <h1>Sample form with ngForm and ngsubmit</h1>
+<form #loginForm="ngForm" (ngSubmit)="submitForm(loginForm)">
+    username:
+    <input minlength="3" type="text" ngModel name="uname" #un="ngModel" required>
+    <ng-container *ngIf="un.touched">
+        <p class="error-msg" *ngIf="un.errors?.['minlength']">username contains minimum 3 characters</p>
+        <p class="error-msg" *ngIf="un.errors?.['required']">username is required</p>
+    </ng-container>
+    <br>
+    <br>
+    password:
+    <input minlength="5" type="password" ngModel name="password" #pwd="ngModel" required>
+    <br>
+    <ng-container *ngIf="pwd.touched">
+        <p class="error-msg" *ngIf="pwd.errors?.['minlength']">password contains minimum 5 characters</p>
+        <p class="error-msg" *ngIf="pwd.errors?.['required']">password is required</p>
+    </ng-container>
+    <button [disabled]="loginForm.untouched && loginForm.invalid">submit</button>
+</form> -->
+
+<!-- <h1>Sample form with set value</h1>
+<form #loginForm="ngForm">
+    username:
+    <input minlength="3" type="text" ngModel name="uname" #un="ngModel" required>
+    <ng-container *ngIf="un.touched">
+        <p class="error-msg" *ngIf="un.errors?.['minlength']">username contains minimum 3 characters</p>
+        <p class="error-msg" *ngIf="un.errors?.['required']">username is required</p>
+    </ng-container>
+    <br>
+    <br>
+    password:
+    <input minlength="5" type="password" ngModel name="password" #pwd="ngModel" required>
+    <br>
+    <ng-container *ngIf="pwd.touched">
+        <p class="error-msg" *ngIf="pwd.errors?.['minlength']">password contains minimum 5 characters</p>
+        <p class="error-msg" *ngIf="pwd.errors?.['required']">password is required</p>
+    </ng-container>
+    <button (click)="submitForm(loginForm)" [disabled]="loginForm.untouched && loginForm.invalid">submit</button>
+</form> -->
+
+<h1>Sample form with patch value</h1>
+<form #loginForm="ngForm">
+    username:
+    <input minlength="3" type="text" ngModel name="uname" #un="ngModel" required>
+    <ng-container *ngIf="un.touched">
+        <p class="error-msg" *ngIf="un.errors?.['minlength']">username contains minimum 3 characters</p>
+        <p class="error-msg" *ngIf="un.errors?.['required']">username is required</p>
+    </ng-container>
+    <br>
+    <br>
+    password:
+    <input minlength="5" type="password" ngModel name="password" #pwd="ngModel" required>
+    <br>
+    <ng-container *ngIf="pwd.touched">
+        <p class="error-msg" *ngIf="pwd.errors?.['minlength']">password contains minimum 5 characters</p>
+        <p class="error-msg" *ngIf="pwd.errors?.['required']">password is required</p>
+    </ng-container>
+    <button class="btn btn-primary" (click)="submitForm(loginForm)"
+        [disabled]="loginForm.untouched && loginForm.invalid">submit</button>
+</form>

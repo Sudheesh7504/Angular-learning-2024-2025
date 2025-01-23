@@ -68,6 +68,7 @@ import { CaptureComponent } from './content-projection/capture/capture.component
 import { ReviewComponent } from './content-projection/review/review.component';
 import { NgcontainerComponent } from './ng-container/ngcontainer/ngcontainer.component';
 import { NgtemplateComponent } from './ng-template/ngtemplate/ngtemplate.component';
+import { SimpleFormControlComponent } from './template-driven-forms/simple-form-control/simple-form-control.component';
 
 @NgModule({
   declarations: [
@@ -133,6 +134,7 @@ import { NgtemplateComponent } from './ng-template/ngtemplate/ngtemplate.compone
     ReviewComponent,
     NgcontainerComponent,
     NgtemplateComponent,
+    SimpleFormControlComponent,
   ],
   imports: [
     BrowserModule,
