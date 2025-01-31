@@ -8,7 +8,7 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgForDirectiveComponent } from './ng-for-directive/ng-for-directive.component';
 import { CounterAppComponent } from './counter-app/counter-app.component';
@@ -69,6 +69,7 @@ import { ReviewComponent } from './content-projection/review/review.component';
 import { NgcontainerComponent } from './ng-container/ngcontainer/ngcontainer.component';
 import { NgtemplateComponent } from './ng-template/ngtemplate/ngtemplate.component';
 import { SimpleFormControlComponent } from './template-driven-forms/simple-form-control/simple-form-control.component';
+import { ReactiveFormsValidationsComponent } from './reactive-forms/reactive-forms-validations/reactive-forms-validations.component';
 
 @NgModule({
   declarations: [
@@ -135,12 +136,14 @@ import { SimpleFormControlComponent } from './template-driven-forms/simple-form-
     NgcontainerComponent,
     NgtemplateComponent,
     SimpleFormControlComponent,
+    ReactiveFormsValidationsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [TestService, AuthService],
   bootstrap: [AppComponent]
