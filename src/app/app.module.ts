@@ -70,6 +70,7 @@ import { NgcontainerComponent } from './ng-container/ngcontainer/ngcontainer.com
 import { NgtemplateComponent } from './ng-template/ngtemplate/ngtemplate.component';
 import { SimpleFormControlComponent } from './template-driven-forms/simple-form-control/simple-form-control.component';
 import { ReactiveFormsValidationsComponent } from './reactive-forms/reactive-forms-validations/reactive-forms-validations.component';
+import { FormArrayComponent } from './reactive-forms/form-array/form-array.component';
 
 @NgModule({
   declarations: [
@@ -137,6 +138,7 @@ import { ReactiveFormsValidationsComponent } from './reactive-forms/reactive-for
     NgtemplateComponent,
     SimpleFormControlComponent,
     ReactiveFormsValidationsComponent,
+    FormArrayComponent,
   ],
   imports: [
     BrowserModule,
