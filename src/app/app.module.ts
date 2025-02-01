@@ -71,6 +71,7 @@ import { NgtemplateComponent } from './ng-template/ngtemplate/ngtemplate.compone
 import { SimpleFormControlComponent } from './template-driven-forms/simple-form-control/simple-form-control.component';
 import { ReactiveFormsValidationsComponent } from './reactive-forms/reactive-forms-validations/reactive-forms-validations.component';
 import { FormArrayComponent } from './reactive-forms/form-array/form-array.component';
+import { FormBuilderComponent } from './reactive-forms/form-builder/form-builder.component';
 
 @NgModule({
   declarations: [
@@ -139,6 +140,7 @@ import { FormArrayComponent } from './reactive-forms/form-array/form-array.compo
     SimpleFormControlComponent,
     ReactiveFormsValidationsComponent,
     FormArrayComponent,
+    FormBuilderComponent,
   ],
   imports: [
     BrowserModule,

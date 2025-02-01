@@ -1,0 +1,23 @@
+<form [formGroup]="testForm">
+    Username:<input type="text" formControlName="uname">
+    <br>
+    <ng-container *ngIf="testForm.get('uname')?.touched">
+        <div class="error-msg" *ngIf="testForm.get('uname')?.hasError('required')">
+            username field is required
+        </div>
+        <div class="error-msg" *ngIf="testForm.controls['uname'].errors?.['duplicateUser']">
+            duplicate username exists
+        </div>
+    </ng-container>
+    <br>
+    password: <input type="text" formControlName="password">
+    <br>
+    <ng-container *ngIf="testForm.get('password')?.touched">
+        <div class="error-msg" *ngIf="testForm.get('password')?.hasError('required')">
+            password field is required
+        </div>
+        <div class="error-msg" *ngIf="testForm.controls['password'].errors?.['noUpper']">
+            password contains atleast one uppercase character
+        </div>
+    </ng-container>
+</form>
