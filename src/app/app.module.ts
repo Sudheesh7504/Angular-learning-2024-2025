@@ -73,6 +73,7 @@ import { ReactiveFormsValidationsComponent } from './reactive-forms/reactive-for
 import { FormArrayComponent } from './reactive-forms/form-array/form-array.component';
 import { FormBuilderComponent } from './reactive-forms/form-builder/form-builder.component';
 import { SignupFormComponent } from './template-driven-forms/signup-form/signup-form.component';
+import { AsyncPipeComponent } from './async-pipe/async-pipe.component';
 
 @NgModule({
   declarations: [
@@ -143,6 +144,7 @@ import { SignupFormComponent } from './template-driven-forms/signup-form/signup-
     FormArrayComponent,
     FormBuilderComponent,
     SignupFormComponent,
+    AsyncPipeComponent,
   ],
   imports: [
     BrowserModule,
