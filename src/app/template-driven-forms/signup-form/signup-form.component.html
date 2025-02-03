@@ -1,0 +1,48 @@
+<form #regForm=ngForm (ngSubmit)="show(regForm)">
+    Fullname:<input minlength="5" type="text" ngModel name="fullname" required>
+    <br>
+    <div *ngIf="regForm.controls['fullname']?.['touched'] && regForm.controls['fullname']?.['errors']">
+        <div *ngIf="regForm.controls['fullname']?.['errors']?.['required']">
+            full name is required
+        </div>
+        <div *ngIf="regForm.controls['fullname']?.['errors']?.['minlength']">
+            full name minlength is 5 characters
+        </div>
+    </div>
+    <br>
+    Email:<input type="email" ngModel name="email" required>
+    <br>
+    <div *ngIf="regForm.controls['email']?.['touched'] && regForm.controls['email']?.['errors']">
+        <div *ngIf="regForm.controls['email']?.['errors']?.['required']">
+            Email is required
+        </div>
+        <div *ngIf="regForm.controls['email']?.['errors']?.['email']">
+            Invalid email
+        </div>
+    </div>
+    <br>
+    Password:<input minlength="8" type="password" ngModel name="password" required>
+    <br>
+    <div *ngIf="regForm.controls['password']?.['touched'] && regForm.controls['password']?.['errors']">
+        <div *ngIf="regForm.controls['password']?.['errors']?.['required']">
+            Password is required
+        </div>
+        <div *ngIf="regForm.controls['password']?.['errors']?.['minlength']">
+            Invalid password
+        </div>
+    </div>
+    <br>
+    Confirm password:<input type="password" ngModel name="cpassword" required>
+    <br>
+    <div *ngIf="regForm.controls['cpassword']?.['touched'] && regForm.controls['cpassword']?.['errors']">
+        <div *ngIf="regForm.controls['cpassword']?.['errors']?.['required']">
+            confirm password is required
+        </div>
+        <div *ngIf="!passwordsMatch(regForm)">
+            passwords should match
+        </div>
+    </div>
+    <br>
+    <button [disabled]="regForm.invalid || !passwordsMatch(regForm)">Signup</button>
+    <br>
+</form>
