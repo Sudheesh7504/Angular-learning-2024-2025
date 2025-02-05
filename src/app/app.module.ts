@@ -74,6 +74,10 @@ import { FormArrayComponent } from './reactive-forms/form-array/form-array.compo
 import { FormBuilderComponent } from './reactive-forms/form-builder/form-builder.component';
 import { SignupFormComponent } from './template-driven-forms/signup-form/signup-form.component';
 import { AsyncPipeComponent } from './async-pipe/async-pipe.component';
+import { CustomDirectiveComponent } from './custom-directives/custom-directive/custom-directive.component';
+import { CustomDirective } from './custom-directives/custom.directive';
+import { CustomStructuralDirectiveComponent } from './custom-directives/custom-structural-directive/custom-structural-directive.component';
+import { CustomNgIfDirective } from './custom-directives/custom-ng-if.directive';
 
 @NgModule({
   declarations: [
@@ -145,6 +149,10 @@ import { AsyncPipeComponent } from './async-pipe/async-pipe.component';
     FormBuilderComponent,
     SignupFormComponent,
     AsyncPipeComponent,
+    CustomDirectiveComponent,
+    CustomDirective,
+    CustomStructuralDirectiveComponent,
+    CustomNgIfDirective,
   ],
   imports: [
     BrowserModule,
