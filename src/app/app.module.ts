@@ -78,6 +78,7 @@ import { CustomDirectiveComponent } from './custom-directives/custom-directive/c
 import { CustomDirective } from './custom-directives/custom.directive';
 import { CustomStructuralDirectiveComponent } from './custom-directives/custom-structural-directive/custom-structural-directive.component';
 import { CustomNgIfDirective } from './custom-directives/custom-ng-if.directive';
+import { ReactiveFormComponent } from './custom-getter-functions-for-reactive-forms/reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -153,6 +154,7 @@ import { CustomNgIfDirective } from './custom-directives/custom-ng-if.directive'
     CustomDirective,
     CustomStructuralDirectiveComponent,
     CustomNgIfDirective,
+    ReactiveFormComponent,
   ],
   imports: [
     BrowserModule,

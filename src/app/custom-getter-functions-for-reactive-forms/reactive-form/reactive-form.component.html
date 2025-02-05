@@ -1,0 +1,27 @@
+<form [formGroup]="loginForm">
+    Username: <input type="text" formControlName="username">
+    <ng-container *ngIf="getControl('username')?.touched">
+        <div *ngIf="getError('username')?.['required']">
+            username is required
+        </div>
+        <div *ngIf="getError('username')?.['minlength']">
+            Username contains atleast 5 characters
+        </div>
+    </ng-container>
+    <br>
+    Password: <input type="text" formControlName="password">
+    <br>
+    <ng-container *ngIf="getControl('password')?.touched">
+        <div *ngIf="getError('password')?.['required']">
+            Password is required
+        </div>
+        <div *ngIf="getError('password')?.['minlength']">
+            Password contains atleast 5 characters
+        </div>
+        <div *ngIf="getError('password')?.['noUpperCase']">
+            Password contains minimum one uppercase character
+        </div>
+    </ng-container>
+    <br>
+    <button [disabled]="loginForm.invalid">Submit</button>
+</form>
