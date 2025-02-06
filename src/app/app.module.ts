@@ -79,6 +79,7 @@ import { CustomDirective } from './custom-directives/custom.directive';
 import { CustomStructuralDirectiveComponent } from './custom-directives/custom-structural-directive/custom-structural-directive.component';
 import { CustomNgIfDirective } from './custom-directives/custom-ng-if.directive';
 import { ReactiveFormComponent } from './custom-getter-functions-for-reactive-forms/reactive-form/reactive-form.component';
+import { TestModuleModule } from './modules/test-module/test-module.module';
 
 @NgModule({
   declarations: [
@@ -154,14 +155,15 @@ import { ReactiveFormComponent } from './custom-getter-functions-for-reactive-fo
     CustomDirective,
     CustomStructuralDirectiveComponent,
     CustomNgIfDirective,
-    ReactiveFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TestModuleModule
   ],
   providers: [TestService, AuthService],
   bootstrap: [AppComponent]
