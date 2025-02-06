@@ -18,6 +18,7 @@ import { ProductDetailsComponent } from './query-params/product-details/product-
 import { LoginComponent } from './route-guards/login/login.component';
 import { DetailsComponent } from './route-guards/details/details.component';
 import { AuthGuard } from './route-guards/auth.guard';
+import { AppModuleComp1Component } from './lazy-loading/app-module-comp1/app-module-comp1.component';
 
 //routing with child routes
 // const routes: Routes = [
@@ -62,9 +63,19 @@ import { AuthGuard } from './route-guards/auth.guard';
 // ];
 
 //route-guards
+// const routes: Routes = [
+//   { path: 'login', component: LoginComponent },
+//   { path: 'details', component: DetailsComponent, canActivate: [AuthGuard] }
+// ]
+
+//lazy-loading
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'details', component: DetailsComponent, canActivate: [AuthGuard] }
+  { path: '', component: AppModuleComp1Component },
+  {
+    path: 'lazym1c1',
+    loadChildren: () =>
+      import('./lazy-loading/lazym1/lazym1.module').then((m) => m.Lazym1Module)
+  }
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

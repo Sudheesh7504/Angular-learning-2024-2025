@@ -80,6 +80,7 @@ import { CustomStructuralDirectiveComponent } from './custom-directives/custom-s
 import { CustomNgIfDirective } from './custom-directives/custom-ng-if.directive';
 import { ReactiveFormComponent } from './custom-getter-functions-for-reactive-forms/reactive-form/reactive-form.component';
 import { TestModuleModule } from './modules/test-module/test-module.module';
+import { AppModuleComp1Component } from './lazy-loading/app-module-comp1/app-module-comp1.component';
 
 @NgModule({
   declarations: [
@@ -155,7 +156,8 @@ import { TestModuleModule } from './modules/test-module/test-module.module';
     CustomDirective,
     CustomStructuralDirectiveComponent,
     CustomNgIfDirective,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    AppModuleComp1Component
   ],
   imports: [
     BrowserModule,
