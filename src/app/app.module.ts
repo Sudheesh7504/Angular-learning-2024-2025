@@ -81,6 +81,18 @@ import { CustomNgIfDirective } from './custom-directives/custom-ng-if.directive'
 import { ReactiveFormComponent } from './custom-getter-functions-for-reactive-forms/reactive-form/reactive-form.component';
 import { TestModuleModule } from './modules/test-module/test-module.module';
 import { AppModuleComp1Component } from './lazy-loading/app-module-comp1/app-module-comp1.component';
+import { ChildOnChangesComponent } from './life-cycle-hooks/ng-on-changes/child-on-changes/child-on-changes.component';
+import { ParentOnChangesComponent } from './life-cycle-hooks/ng-on-changes/parent-on-changes/parent-on-changes.component';
+import { NgOnInitComponent } from './life-cycle-hooks/ng-on-init-vs-constructor/ng-on-init/ng-on-init.component';
+import { ParentNgDoCheckComponent } from './life-cycle-hooks/ng-do-check/parent-ng-do-check/parent-ng-do-check.component';
+import { ChildNgDoCheckComponent } from './life-cycle-hooks/ng-do-check/child-ng-do-check/child-ng-do-check.component';
+import { NgAfterViewInitAndCheckedComponent } from './life-cycle-hooks/ng-after-view-init-Vs-ng-after-view-checked/ng-after-view-init-and-checked/ng-after-view-init-and-checked.component';
+import { ParentNgAfterContentInitAndCheckedComponent } from './life-cycle-hooks/ng-after-content-init-and-content-checked/parent-ng-after-content-init-and-checked/parent-ng-after-content-init-and-checked.component';
+import { ChildNgAfterContentInitAndCheckedComponent } from './life-cycle-hooks/ng-after-content-init-and-content-checked/child-ng-after-content-init-and-checked/child-ng-after-content-init-and-checked.component';
+import { HomeNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/home-ng-on-destroy/home-ng-on-destroy.component';
+import { SignupNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/signup-ng-on-destroy/signup-ng-on-destroy.component';
+import { ContactNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/contact-ng-on-destroy/contact-ng-on-destroy.component';
+import { NgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/ng-on-destroy/ng-on-destroy.component';
 
 @NgModule({
   declarations: [
@@ -157,7 +169,19 @@ import { AppModuleComp1Component } from './lazy-loading/app-module-comp1/app-mod
     CustomStructuralDirectiveComponent,
     CustomNgIfDirective,
     ReactiveFormComponent,
-    AppModuleComp1Component
+    AppModuleComp1Component,
+    ChildOnChangesComponent,
+    ParentOnChangesComponent,
+    NgOnInitComponent,
+    ParentNgDoCheckComponent,
+    ChildNgDoCheckComponent,
+    NgAfterViewInitAndCheckedComponent,
+    ParentNgAfterContentInitAndCheckedComponent,
+    ChildNgAfterContentInitAndCheckedComponent,
+    HomeNgOnDestroyComponent,
+    SignupNgOnDestroyComponent,
+    ContactNgOnDestroyComponent,
+    NgOnDestroyComponent
   ],
   imports: [
     BrowserModule,

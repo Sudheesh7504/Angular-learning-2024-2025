@@ -19,6 +19,9 @@ import { LoginComponent } from './route-guards/login/login.component';
 import { DetailsComponent } from './route-guards/details/details.component';
 import { AuthGuard } from './route-guards/auth.guard';
 import { AppModuleComp1Component } from './lazy-loading/app-module-comp1/app-module-comp1.component';
+import { HomeNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/home-ng-on-destroy/home-ng-on-destroy.component';
+import { SignupNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/signup-ng-on-destroy/signup-ng-on-destroy.component';
+import { ContactNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/contact-ng-on-destroy/contact-ng-on-destroy.component';
 
 //routing with child routes
 // const routes: Routes = [
@@ -69,13 +72,20 @@ import { AppModuleComp1Component } from './lazy-loading/app-module-comp1/app-mod
 // ]
 
 //lazy-loading
+// const routes: Routes = [
+//   { path: '', component: AppModuleComp1Component },
+//   {
+//     path: 'lazym1c1',
+//     loadChildren: () =>
+//       import('./lazy-loading/lazym1/lazym1.module').then((m) => m.Lazym1Module)
+//   }
+// ]
+
+//ng-on-destroy
 const routes: Routes = [
-  { path: '', component: AppModuleComp1Component },
-  {
-    path: 'lazym1c1',
-    loadChildren: () =>
-      import('./lazy-loading/lazym1/lazym1.module').then((m) => m.Lazym1Module)
-  }
+  { path: 'home', component: HomeNgOnDestroyComponent },
+  { path: 'signup', component: SignupNgOnDestroyComponent },
+  { path: 'contact', component: ContactNgOnDestroyComponent }
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

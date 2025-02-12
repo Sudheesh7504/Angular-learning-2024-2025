@@ -1,0 +1,19 @@
+.nav-bar-ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar-list {
+    list-style-type: none;
+    gap: 10px;
+}
+
+.nav-bar-item {
+    text-decoration: none;
+    gap: 20px;
+}
+
+.active {
+    background-color: blue;
+    color: white;
+}

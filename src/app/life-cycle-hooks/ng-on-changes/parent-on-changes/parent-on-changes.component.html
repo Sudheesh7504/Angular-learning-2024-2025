@@ -1,0 +1,6 @@
+<p>parent-on-changes works!</p>
+<br>
+<input type="text" [(ngModel)]="wish">
+<br>
+{{wish}}
+<app-child-on-changes [child]="wish"></app-child-on-changes>
