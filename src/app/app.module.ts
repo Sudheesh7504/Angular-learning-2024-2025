@@ -93,6 +93,9 @@ import { HomeNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/home-
 import { SignupNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/signup-ng-on-destroy/signup-ng-on-destroy.component';
 import { ContactNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/contact-ng-on-destroy/contact-ng-on-destroy.component';
 import { NgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/ng-on-destroy/ng-on-destroy.component';
+import { SubjectFormComponent } from './subjects/subject/subject/subject-form/subject-form.component';
+import { SubjectToDoListComponent } from './subjects/subject/subject/subject-to-do-list/subject-to-do-list.component';
+import { SubjectComponent } from './subjects/subject/subject/subject/subject.component';
 
 @NgModule({
   declarations: [
@@ -181,7 +184,10 @@ import { NgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/ng-on-des
     HomeNgOnDestroyComponent,
     SignupNgOnDestroyComponent,
     ContactNgOnDestroyComponent,
-    NgOnDestroyComponent
+    NgOnDestroyComponent,
+    SubjectFormComponent,
+    SubjectToDoListComponent,
+    SubjectComponent
   ],
   imports: [
     BrowserModule,
