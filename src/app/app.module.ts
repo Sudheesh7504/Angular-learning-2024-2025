@@ -98,6 +98,7 @@ import { SubjectToDoListComponent } from './subjects/subject/subject/subject-to-
 import { SubjectComponent } from './subjects/subject/subject/subject/subject.component';
 import { HomeBehaviorSubjectComponent } from './subjects/behavior-subject/home-behavior-subject/home-behavior-subject.component';
 import { ProductsBehaviorSubjectComponent } from './subjects/behavior-subject/products-behavior-subject/products-behavior-subject.component';
+import { BehaviorSubjectPasswordCheckerComponent } from './subjects/behavior-subject/behavior-subject-password-checker-app/behavior-subject-password-checker/behavior-subject-password-checker.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -190,7 +191,8 @@ import { ProductsBehaviorSubjectComponent } from './subjects/behavior-subject/pr
     SubjectToDoListComponent,
     SubjectComponent,
     HomeBehaviorSubjectComponent,
-    ProductsBehaviorSubjectComponent
+    ProductsBehaviorSubjectComponent,
+    BehaviorSubjectPasswordCheckerComponent
   ],
   imports: [
     BrowserModule,
