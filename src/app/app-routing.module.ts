@@ -22,6 +22,8 @@ import { AppModuleComp1Component } from './lazy-loading/app-module-comp1/app-mod
 import { HomeNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/home-ng-on-destroy/home-ng-on-destroy.component';
 import { SignupNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/signup-ng-on-destroy/signup-ng-on-destroy.component';
 import { ContactNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/contact-ng-on-destroy/contact-ng-on-destroy.component';
+import { HomeBehaviorSubjectComponent } from './subjects/behavior-subject/home-behavior-subject/home-behavior-subject.component';
+import { ProductsBehaviorSubjectComponent } from './subjects/behavior-subject/products-behavior-subject/products-behavior-subject.component';
 
 //routing with child routes
 // const routes: Routes = [
@@ -82,10 +84,16 @@ import { ContactNgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/co
 // ]
 
 //ng-on-destroy
+// const routes: Routes = [
+//   { path: 'home', component: HomeNgOnDestroyComponent },
+//   { path: 'signup', component: SignupNgOnDestroyComponent },
+//   { path: 'contact', component: ContactNgOnDestroyComponent }
+// ]
+
+//behavior-subject
 const routes: Routes = [
-  { path: 'home', component: HomeNgOnDestroyComponent },
-  { path: 'signup', component: SignupNgOnDestroyComponent },
-  { path: 'contact', component: ContactNgOnDestroyComponent }
+  { path: "", component: HomeBehaviorSubjectComponent },
+  { path: 'products', component: ProductsBehaviorSubjectComponent }
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

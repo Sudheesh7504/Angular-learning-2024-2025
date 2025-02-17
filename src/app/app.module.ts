@@ -96,7 +96,8 @@ import { NgOnDestroyComponent } from './life-cycle-hooks/ng-on-destroy/ng-on-des
 import { SubjectFormComponent } from './subjects/subject/subject/subject-form/subject-form.component';
 import { SubjectToDoListComponent } from './subjects/subject/subject/subject-to-do-list/subject-to-do-list.component';
 import { SubjectComponent } from './subjects/subject/subject/subject/subject.component';
-
+import { HomeBehaviorSubjectComponent } from './subjects/behavior-subject/home-behavior-subject/home-behavior-subject.component';
+import { ProductsBehaviorSubjectComponent } from './subjects/behavior-subject/products-behavior-subject/products-behavior-subject.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -187,7 +188,9 @@ import { SubjectComponent } from './subjects/subject/subject/subject/subject.com
     NgOnDestroyComponent,
     SubjectFormComponent,
     SubjectToDoListComponent,
-    SubjectComponent
+    SubjectComponent,
+    HomeBehaviorSubjectComponent,
+    ProductsBehaviorSubjectComponent
   ],
   imports: [
     BrowserModule,
