@@ -99,6 +99,9 @@ import { SubjectComponent } from './subjects/subject/subject/subject/subject.com
 import { HomeBehaviorSubjectComponent } from './subjects/behavior-subject/home-behavior-subject/home-behavior-subject.component';
 import { ProductsBehaviorSubjectComponent } from './subjects/behavior-subject/products-behavior-subject/products-behavior-subject.component';
 import { BehaviorSubjectPasswordCheckerComponent } from './subjects/behavior-subject/behavior-subject-password-checker-app/behavior-subject-password-checker/behavior-subject-password-checker.component';
+import { BehaviorSubjectCounterDisplayComponent } from './subjects/behavior-subject/behavior-subject-counter-app/behavior-subject-counter-display/behavior-subject-counter-display.component';
+import { BehaviorSubjectIncrementCounterComponent } from './subjects/behavior-subject/behavior-subject-counter-app/behavior-subject-increment-counter/behavior-subject-increment-counter.component';
+import { BehaviorSubjectDecrementCounterComponent } from './subjects/behavior-subject/behavior-subject-counter-app/behavior-subject-decrement-counter/behavior-subject-decrement-counter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -192,7 +195,10 @@ import { BehaviorSubjectPasswordCheckerComponent } from './subjects/behavior-sub
     SubjectComponent,
     HomeBehaviorSubjectComponent,
     ProductsBehaviorSubjectComponent,
-    BehaviorSubjectPasswordCheckerComponent
+    BehaviorSubjectPasswordCheckerComponent,
+    BehaviorSubjectCounterDisplayComponent,
+    BehaviorSubjectIncrementCounterComponent,
+    BehaviorSubjectDecrementCounterComponent
   ],
   imports: [
     BrowserModule,
