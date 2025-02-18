@@ -103,6 +103,8 @@ import { BehaviorSubjectCounterDisplayComponent } from './subjects/behavior-subj
 import { BehaviorSubjectIncrementCounterComponent } from './subjects/behavior-subject/behavior-subject-counter-app/behavior-subject-increment-counter/behavior-subject-increment-counter.component';
 import { BehaviorSubjectDecrementCounterComponent } from './subjects/behavior-subject/behavior-subject-counter-app/behavior-subject-decrement-counter/behavior-subject-decrement-counter.component';
 import { StockUpdatesReplaySubjectComponent } from './subjects/replay-subject/stock-updates-app/stock-updates-replay-subject/stock-updates-replay-subject.component';
+import { User1Component } from './subjects/replay-subject/chat-application-replay-subject/user1/user1.component';
+import { User2Component } from './subjects/replay-subject/chat-application-replay-subject/user2/user2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -200,7 +202,9 @@ import { StockUpdatesReplaySubjectComponent } from './subjects/replay-subject/st
     BehaviorSubjectCounterDisplayComponent,
     BehaviorSubjectIncrementCounterComponent,
     BehaviorSubjectDecrementCounterComponent,
-    StockUpdatesReplaySubjectComponent
+    StockUpdatesReplaySubjectComponent,
+    User1Component,
+    User2Component
   ],
   imports: [
     BrowserModule,

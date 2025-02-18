@@ -1,0 +1,13 @@
+<p>user2 works!</p>
+<h1>{{senderMessage}}</h1>
+
+<input type="text" #replyMsg>
+<button (click)="sendReplyMessage(replyMsg.value)">Send reply</button>
+
+<br>
+user2 chat history:-
+<br>
+<ol>
+    <li *ngFor="let history of messagehistory">Message: {{history?.replierMessage}} -- Reply: {{history?.senderMessage}}
+    </li>
+</ol>

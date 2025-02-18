@@ -1,0 +1,14 @@
+<p>user1 works!</p>
+<input type="text" #msg>
+<button (click)="sendMessage(msg.value)">Send Message</button>
+<app-user2 [senderMessage]="senderMessage" (replierMessageEmitter)="getReply($event)"></app-user2>
+<br>
+<h1>from user2:{{replierMessage}}</h1>
+
+<br>
+user1 chat history:-
+<br>
+<ol>
+    <li *ngFor="let history of messagehistory">Message: {{history?.senderMessage}} -- Reply: {{history?.replierMessage}}
+    </li>
+</ol>
