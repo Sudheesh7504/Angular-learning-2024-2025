@@ -20,6 +20,12 @@ export class HomeBehaviorSubjectComponent {
     this.bs.bs1.subscribe((data) => {
       console.log("bs data", data);
     })
+
+    setTimeout(() => {
+      this.bs.rs1.subscribe((data) => {
+        console.log("replay subject data", data);
+      })
+    }, 10000)
   }
 
   goToProducts() {
@@ -29,5 +35,6 @@ export class HomeBehaviorSubjectComponent {
   emitValue() {
     this.bs.ss1.next("simple subject value 2");
     this.bs.bs1.next("second emitted value");
+    this.bs.rs1.next("value 6")
   }
 }

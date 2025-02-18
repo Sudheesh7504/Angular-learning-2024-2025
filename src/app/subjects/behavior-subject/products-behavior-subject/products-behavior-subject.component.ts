@@ -20,6 +20,12 @@ export class ProductsBehaviorSubjectComponent {
     this.bs.bs1.subscribe((data) => {
       console.log("bs data", data);
     })
+
+
+    this.bs.rs1.subscribe((data) => {
+      console.log("replay subject data", data)
+    })
+
   }
 
 }
