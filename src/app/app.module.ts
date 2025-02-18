@@ -102,6 +102,7 @@ import { BehaviorSubjectPasswordCheckerComponent } from './subjects/behavior-sub
 import { BehaviorSubjectCounterDisplayComponent } from './subjects/behavior-subject/behavior-subject-counter-app/behavior-subject-counter-display/behavior-subject-counter-display.component';
 import { BehaviorSubjectIncrementCounterComponent } from './subjects/behavior-subject/behavior-subject-counter-app/behavior-subject-increment-counter/behavior-subject-increment-counter.component';
 import { BehaviorSubjectDecrementCounterComponent } from './subjects/behavior-subject/behavior-subject-counter-app/behavior-subject-decrement-counter/behavior-subject-decrement-counter.component';
+import { StockUpdatesReplaySubjectComponent } from './subjects/replay-subject/stock-updates-app/stock-updates-replay-subject/stock-updates-replay-subject.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -198,7 +199,8 @@ import { BehaviorSubjectDecrementCounterComponent } from './subjects/behavior-su
     BehaviorSubjectPasswordCheckerComponent,
     BehaviorSubjectCounterDisplayComponent,
     BehaviorSubjectIncrementCounterComponent,
-    BehaviorSubjectDecrementCounterComponent
+    BehaviorSubjectDecrementCounterComponent,
+    StockUpdatesReplaySubjectComponent
   ],
   imports: [
     BrowserModule,
