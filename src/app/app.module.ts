@@ -109,6 +109,7 @@ import { StudentResultDisplayComponent } from './subjects/async-subject/result-g
 import { RxjsCreationOperatorsComponent } from './subjects/rxjs-operators/creation-operators/rxjs-creation-operators/rxjs-creation-operators.component';
 import { MapOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/map-operator/map-operator.component';
 import { FilterOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/filter-operator/filter-operator.component';
+import { FromEventOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/from-event-operator/from-event-operator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -212,7 +213,8 @@ import { FilterOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable
     StudentResultDisplayComponent,
     RxjsCreationOperatorsComponent,
     MapOperatorComponent,
-    FilterOperatorComponent
+    FilterOperatorComponent,
+    FromEventOperatorComponent
   ],
   imports: [
     BrowserModule,
