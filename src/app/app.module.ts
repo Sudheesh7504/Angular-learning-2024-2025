@@ -106,6 +106,7 @@ import { StockUpdatesReplaySubjectComponent } from './subjects/replay-subject/st
 import { User1Component } from './subjects/replay-subject/chat-application-replay-subject/user1/user1.component';
 import { User2Component } from './subjects/replay-subject/chat-application-replay-subject/user2/user2.component';
 import { StudentResultDisplayComponent } from './subjects/async-subject/result-generator-app/student-result-display/student-result-display.component';
+import { RxjsCreationOperatorsComponent } from './subjects/rxjs-operators/creation-operators/rxjs-creation-operators/rxjs-creation-operators.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -206,7 +207,8 @@ import { StudentResultDisplayComponent } from './subjects/async-subject/result-g
     StockUpdatesReplaySubjectComponent,
     User1Component,
     User2Component,
-    StudentResultDisplayComponent
+    StudentResultDisplayComponent,
+    RxjsCreationOperatorsComponent
   ],
   imports: [
     BrowserModule,
