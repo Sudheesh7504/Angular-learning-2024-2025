@@ -111,6 +111,7 @@ import { MapOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-op
 import { FilterOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/filter-operator/filter-operator.component';
 import { FromEventOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/from-event-operator/from-event-operator.component';
 import { SearchDataComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/search-functionality-app/search-data/search-data.component';
+import { MergeOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/merge-operator/merge-operator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -216,7 +217,8 @@ import { SearchDataComponent } from './subjects/rxjs-operators/rxjs-pipeable-ope
     MapOperatorComponent,
     FilterOperatorComponent,
     FromEventOperatorComponent,
-    SearchDataComponent
+    SearchDataComponent,
+    MergeOperatorComponent
   ],
   imports: [
     BrowserModule,
