@@ -113,6 +113,7 @@ import { FromEventOperatorComponent } from './subjects/rxjs-operators/rxjs-pipea
 import { SearchDataComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/search-functionality-app/search-data/search-data.component';
 import { MergeOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/merge-operator/merge-operator.component';
 import { PluckOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/pluck-operator/pluck-operator.component';
+import { SkipOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/skip-operator/skip-operator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -220,7 +221,8 @@ import { PluckOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-
     FromEventOperatorComponent,
     SearchDataComponent,
     MergeOperatorComponent,
-    PluckOperatorComponent
+    PluckOperatorComponent,
+    SkipOperatorComponent
   ],
   imports: [
     BrowserModule,
