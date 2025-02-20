@@ -1,5 +1,4 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { debounceTime, distinctUntilChanged, fromEvent } from 'rxjs';
 import { SearchService } from '../search.service';
 
 @Component({
@@ -10,16 +9,26 @@ import { SearchService } from '../search.service';
 export class SearchDataComponent {
   @ViewChild('searchInput') searchInput!: ElementRef;
   filteredNames: any = [];
+  private searchSubscription: any;
+  filterDataSubjectSubs: any;
 
   constructor(private searchService: SearchService) { }
 
   ngOnInit() {
-    this.searchService.filterDataSubject.subscribe((names) => {
+    this.filterDataSubjectSubs = this.searchService.filterDataSubject.subscribe((names) => {
       this.filteredNames = names;
     })
   }
 
   ngAfterViewInit() {
-    this.searchService.searchNames(this.searchInput)
+    this.searchSubscription = this.searchService.searchNames(this.searchInput);
   }
+
+  ngOnDestroy() {
+    if (this.searchSubscription) {
+      this.searchSubscription.unsubscribe();
+    }
+    this.filterDataSubjectSubs?.unsubscribe();
+  }
+
 }
