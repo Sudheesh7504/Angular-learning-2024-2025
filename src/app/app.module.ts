@@ -117,6 +117,7 @@ import { SkipOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-o
 import { DistinctUntilChangedOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/distinct-until-changed-operator/distinct-until-changed-operator.component';
 import { ExtractingUsersDataComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/extracting-data-task/extracting-users-data/extracting-users-data.component';
 import { TrackButtonClicksComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/button-click-handling/track-button-clicks/track-button-clicks.component';
+import { RealtimeNotificationsComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/realtime-notofications-app/realtime-notifications/realtime-notifications.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -228,7 +229,8 @@ import { TrackButtonClicksComponent } from './subjects/rxjs-operators/rxjs-pipea
     SkipOperatorComponent,
     DistinctUntilChangedOperatorComponent,
     ExtractingUsersDataComponent,
-    TrackButtonClicksComponent
+    TrackButtonClicksComponent,
+    RealtimeNotificationsComponent
   ],
   imports: [
     BrowserModule,
