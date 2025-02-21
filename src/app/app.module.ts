@@ -115,6 +115,7 @@ import { MergeOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-
 import { PluckOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/pluck-operator/pluck-operator.component';
 import { SkipOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/skip-operator/skip-operator.component';
 import { DistinctUntilChangedOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/distinct-until-changed-operator/distinct-until-changed-operator.component';
+import { ExtractingUsersDataComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/extracting-data-task/extracting-users-data/extracting-users-data.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -224,7 +225,8 @@ import { DistinctUntilChangedOperatorComponent } from './subjects/rxjs-operators
     MergeOperatorComponent,
     PluckOperatorComponent,
     SkipOperatorComponent,
-    DistinctUntilChangedOperatorComponent
+    DistinctUntilChangedOperatorComponent,
+    ExtractingUsersDataComponent
   ],
   imports: [
     BrowserModule,
