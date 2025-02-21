@@ -116,6 +116,7 @@ import { PluckOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-
 import { SkipOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/skip-operator/skip-operator.component';
 import { DistinctUntilChangedOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/distinct-until-changed-operator/distinct-until-changed-operator.component';
 import { ExtractingUsersDataComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/extracting-data-task/extracting-users-data/extracting-users-data.component';
+import { TrackButtonClicksComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/button-click-handling/track-button-clicks/track-button-clicks.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -226,7 +227,8 @@ import { ExtractingUsersDataComponent } from './subjects/rxjs-operators/rxjs-pip
     PluckOperatorComponent,
     SkipOperatorComponent,
     DistinctUntilChangedOperatorComponent,
-    ExtractingUsersDataComponent
+    ExtractingUsersDataComponent,
+    TrackButtonClicksComponent
   ],
   imports: [
     BrowserModule,
