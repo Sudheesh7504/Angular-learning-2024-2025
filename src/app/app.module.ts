@@ -118,6 +118,7 @@ import { DistinctUntilChangedOperatorComponent } from './subjects/rxjs-operators
 import { ExtractingUsersDataComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/extracting-data-task/extracting-users-data/extracting-users-data.component';
 import { TrackButtonClicksComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/button-click-handling/track-button-clicks/track-button-clicks.component';
 import { RealtimeNotificationsComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/realtime-notofications-app/realtime-notifications/realtime-notifications.component';
+import { ForkJoinOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/fork-join-operator/fork-join-operator/fork-join-operator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -230,7 +231,8 @@ import { RealtimeNotificationsComponent } from './subjects/rxjs-operators/rxjs-p
     DistinctUntilChangedOperatorComponent,
     ExtractingUsersDataComponent,
     TrackButtonClicksComponent,
-    RealtimeNotificationsComponent
+    RealtimeNotificationsComponent,
+    ForkJoinOperatorComponent
   ],
   imports: [
     BrowserModule,
