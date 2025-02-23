@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { fromEvent, mergeMap } from 'rxjs';
+import { combineLatest, fromEvent, mergeMap } from 'rxjs';
 
 @Component({
   selector: 'app-merge-map-operator',
@@ -26,5 +26,17 @@ export class MergeMapOperatorComponent {
     ).subscribe((posts) => {
       this.posts = posts;
     })
+
+  }
+
+
+  fetchUserAndPosts() {
+    const user$ = this.https.get('https://jsonplaceholder.typicode.com/users/1');
+    const posts$ = this.https.get('https://jsonplaceholder.typicode.com/posts?userId=1');
+
+    combineLatest([user$, posts$]).subscribe(([user, posts]) => {
+      console.log('User:', user);
+      console.log('Posts:', posts);
+    });
   }
 }

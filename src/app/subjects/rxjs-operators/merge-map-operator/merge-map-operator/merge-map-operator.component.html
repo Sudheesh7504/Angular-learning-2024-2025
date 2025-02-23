@@ -4,3 +4,15 @@ merge-map operator: mergemap operator works like dependently and independently b
 pararell api calls without cancelling previous one its called independently and when we have dependecny on other api
 that time also we use this
 <button #btn>get users posts</button>
+<br>
+<div *ngIf="users">
+    <h3>username:{{users.name}}-- Usermail: {{users.email}}</h3>
+    <h4>posts:</h4>
+    <ul>
+        <li *ngFor="let post of posts">{{post.title}}</li>
+    </ul>
+</div>
+<br>
+combinelatest operator: this will execute all api calls at once independently when the one api call will emits anothet
+time remaining api calls also execute other time simulataneously
+<button (click)="fetchUserAndPosts()">fetch users post data</button>
