@@ -122,6 +122,7 @@ import { ForkJoinOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeab
 import { ContactMapOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/concat-map-operator/contact-map-operator/contact-map-operator.component';
 import { ExhaustMapOperatorComponent } from './subjects/rxjs-operators/exhaust-map-operator/exhaust-map-operator/exhaust-map-operator.component';
 import { MergeMapOperatorComponent } from './subjects/rxjs-operators/merge-map-operator/merge-map-operator/merge-map-operator.component';
+import { TakeUntilOperatorComponent } from './subjects/rxjs-operators/creation-operators/take-until-operator/take-until-operator/take-until-operator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -238,7 +239,8 @@ import { MergeMapOperatorComponent } from './subjects/rxjs-operators/merge-map-o
     ForkJoinOperatorComponent,
     ContactMapOperatorComponent,
     ExhaustMapOperatorComponent,
-    MergeMapOperatorComponent
+    MergeMapOperatorComponent,
+    TakeUntilOperatorComponent
   ],
   imports: [
     BrowserModule,
