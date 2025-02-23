@@ -120,6 +120,7 @@ import { TrackButtonClicksComponent } from './subjects/rxjs-operators/rxjs-pipea
 import { RealtimeNotificationsComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/merge-operator/realtime-notofications-app/realtime-notifications/realtime-notifications.component';
 import { ForkJoinOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/fork-join-operator/fork-join-operator/fork-join-operator.component';
 import { ContactMapOperatorComponent } from './subjects/rxjs-operators/rxjs-pipeable-operators/concat-map-operator/contact-map-operator/contact-map-operator.component';
+import { ExhaustMapOperatorComponent } from './subjects/rxjs-operators/exhaust-map-operator/exhaust-map-operator/exhaust-map-operator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -234,7 +235,8 @@ import { ContactMapOperatorComponent } from './subjects/rxjs-operators/rxjs-pipe
     TrackButtonClicksComponent,
     RealtimeNotificationsComponent,
     ForkJoinOperatorComponent,
-    ContactMapOperatorComponent
+    ContactMapOperatorComponent,
+    ExhaustMapOperatorComponent
   ],
   imports: [
     BrowserModule,
